@@ -5,6 +5,7 @@ mydb = mysql.connector.connect(
   password="828706",
   database= "marks_bazar"
 )
+mycursor = mydb.cursor()
 
-print(mydb)
-print("renato")
+mycursor.execute("CREATE TABLE teste (nome VARCHAR(50), endereço VARCHAR(50))")
+
